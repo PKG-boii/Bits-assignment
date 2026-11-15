@@ -1,0 +1,59 @@
+# Git Commands Used in the Assignment
+
+## 1. Local Repository Setup
+
+1. `mkdir git-assignment` – Creates a new project directory.
+2. `cd git-assignment` – Navigates into the project directory.
+3. `touch index.html about.html` – Creates two HTML files.
+4. `git init` – Initializes a new local Git repository.
+5. `git branch -M main` – Renames the default branch to main.
+6. `git config --global user.name "Your Name"` – Sets the Git username.
+7. `git config --global user.email "your-email@example.com"` – Sets the Git email.
+8. `git status` – Displays the current state of the working directory.
+
+## 2. Git Workflow
+
+9. `git add .` – Stages all changes for the next commit.
+10. `git commit -m "Initial commit: Add HTML files"` – Records the initial project state.
+11. `git add index.html` – Stages changes made to index.html.
+12. `git commit -m "Update homepage content"` – Saves the homepage modification.
+13. `git branch feature` – Creates a new branch named feature.
+14. `git switch feature` – Switches to the feature branch.
+15. `git add contact.html` – Stages the newly created contact page.
+16. `git commit -m "Add contact page on feature branch"` – Records the feature branch changes.
+17. `git switch main` – Switches back to the main branch.
+18. `git merge feature` – Merges the feature branch into main.
+19. `git log --oneline --graph --all` – Displays commit history with branch structure.
+
+## 3. Git Ignore
+
+20. `touch .gitignore` – Creates the Git ignore configuration file.
+21. `mkdir temp` – Creates a temporary directory.
+22. `touch error.log` – Creates a log file to test ignore rules.
+23. `git add .gitignore` – Stages the ignore configuration.
+24. `git commit -m "Add gitignore configuration"` – Saves the ignore configuration.
+
+## 4. Undo Operation
+
+25. `git add about.html` – Stages the additional modification.
+26. `git commit -m "Add temporary content to about page"` – Creates an additional commit.
+27. `git log --oneline -1` – Displays the latest commit.
+28. `git revert HEAD` – Reverses the changes introduced by the latest commit.
+29. `cat about.html` – Displays the contents of about.html to verify the revert.
+
+## 5. GitHub Integration
+
+30. `git remote add origin https://github.com/Naren456/bits-assignment.git` – Connects the local repository to GitHub.
+31. `git remote -v` – Displays the configured remote repository URLs.
+32. `git push -u origin main` – Pushes the main branch to GitHub.
+33. `git push -u origin feature` – Pushes the feature branch to GitHub.
+
+## 6. Documentation
+
+34. `touch git_commands.txt` – Creates the Git command documentation file.
+35. `git add git_commands.txt` – Stages the documentation file.
+36. `git commit -m "Add Git commands documentation"` – Commits the documentation file.
+
+## GitHub Repository
+
+https://github.com/PKG-boii/Bits-assignment
